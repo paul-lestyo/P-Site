@@ -1,0 +1,321 @@
+    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+     
+    * {
+       box-sizing: border-box;
+    }
+
+	 body {
+	   font-family: 'Quicksand', sans-serif;
+	   margin: 0;
+	   padding: 0;
+	}
+
+    header {
+       display: inline;
+    }	
+     
+    h2, h3 {
+       color: #00a2c6
+    }
+     
+    main {
+       padding: 20px;
+       overflow: auto;
+    }
+
+    tr {
+    	text-align: left;
+    }
+     
+    footer {
+       padding: 20px;
+       color: white;
+       background-color: #00a2c6;
+       text-align: center;
+       font-weight: bold;
+    }
+
+    .footerDark {
+      background-color: #0b0a0d;
+    }
+    
+    nav {
+       background-color: #00a2c6;
+       padding: 5px;
+       position: sticky;
+       top: 0;
+       overflow: auto;
+       z-index: 99;
+    }
+
+    nav li {
+       display: inline;
+       list-style-type: none;
+       margin-right: 20px;
+    }
+
+    nav a {
+       font-size: 18px;
+       font-weight: 400;
+       text-decoration: none;
+       color: white;
+    }
+
+    nav a:hover {
+       font-weight: bold;
+    }
+
+    article {
+    	overflow: auto;
+    }
+
+    .card header {
+       text-align: center;
+    }        
+
+    .right {
+    	float: right;
+    }
+
+    .darkMode {
+      background-color: #222;
+    }
+
+    .darkMode p,
+    .darkMode tr,
+    .darkMode .recent a {
+      color: white;
+    }
+
+    .darkMode .readmore a {
+      color: #00a2c6;
+    }
+
+    .search input {
+    	padding: 5px;
+    }
+
+    .profile img {
+       width: 200px;
+    }
+
+    .featured-image {
+      overflow: hidden;
+    }
+
+    .featured-image img {
+       width: 100%;
+       max-height: 300px;
+       object-fit: cover;
+       object-position: center;
+       overflow: hidden;
+       transition: all 3s ease-in-out;
+    }
+
+    .featured-image:hover img{
+      transform: scale(1.5,1.5);
+    }
+
+    .card {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       border-radius: 5px;
+       padding: 20px;
+       margin-top: 20px;
+    }
+
+    .jumbotron {
+       font-size: 20px;
+       padding: 100px;
+       background-color: #00c8eb;
+       text-align: center;
+       color: white;
+    }    
+
+    .jumbotronDark {
+      background-color: #0b0a0d;
+    }
+
+    .mainDark {
+      background-color: #16151d;
+    }
+
+    .home h1 {
+      display: inline;
+      padding: 10px;
+      border: 3px solid #004D5E;
+      background-color: #00A2C6; 
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .home {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../assets/image/team.jpg) no-repeat scroll center;
+      background-size: 100% 100%;
+      object-fit: cover;
+      font-size: 20px;
+      padding-top: 43%;
+      background-color: #00c8eb;
+      text-align: center;
+      color: white;
+    }
+
+    .pagination ul {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .text {
+      text-align: justify;
+      text-indent: 20px;
+    }
+    .text p::first-letter {
+     font-size: 32px;
+     font-weight: bold;
+     color: black;
+    }
+
+    .pagination ul li {
+      display: inline-block;
+      list-style: none;
+      padding: 10px;
+      border-radius: 2px;
+      background-color: white;
+      border: 2px solid #1193d4;
+    }
+
+    .pagination ul li:hover {
+      background-color: #1193d4;
+    }
+
+    .pagination ul li:hover a {
+      font-weight: bold;
+    }
+
+    .pagination ul li a {
+      text-decoration: none;
+    }
+
+    #mainContent {
+       float: left;
+       width: 75%;
+    }
+
+    .readmore {
+    	float: right;
+    }
+
+    .recent {
+      text-align: left;
+      display: flex;
+      overflow: auto;
+      margin-bottom: 10px;
+    }
+
+    .recent a {
+      text-decoration: none;
+      font-size: 18px;
+      padding-left: 10px;
+      color: black;
+    }
+
+    .recent a:hover {
+      color: blue;
+    }
+    
+    .recentImg {
+      width: 40%;
+      max-height: 50px;
+      max-width: 50px;
+      overflow: hidden;
+    }
+
+    .recentImg img {
+      width: 100%;
+
+    }
+
+    .imageBlog img {
+      max-height: 700px;
+    }
+
+    aside {
+       float: right;
+       width: 25%;
+       padding-left: 20px;
+    }
+
+    #iconNav {
+      display: none;
+    }
+
+    #main-slider {
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    #slider {
+      width: 500%;
+      margin: 0 auto;
+    }
+
+    #slider h4 {
+      overflow: hidden;
+      text-align: center;
+    }
+
+    #slider div {
+      float: left;
+      width: 20%;
+      overflow: hidden;
+    }
+
+    #slider div img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      object-position: center;
+      overflow: hidden;
+    }
+
+
+    @media screen and (max-width: 1000px) {
+       #mainContent,
+       aside {
+           width: 100%;
+           padding: 0;
+       }
+
+      #nav li:not(:nth-child(2)) {
+        display: none;
+      }
+
+      #nav {
+        text-align: center;
+      }
+
+      #slider div img {
+      max-height: 200px;
+    }
+
+      #nav.nav.responsive li {
+      float: none;
+      display: block;
+      text-align: left;
+      padding-bottom: 20px;
+      }
+      #nav.nav.responsive .right{
+      display: inline;
+      }
+
+      #nav #iconNav {
+        font-size: 1em;
+        display: block;
+        float: right;
+      }
+
+    }    
