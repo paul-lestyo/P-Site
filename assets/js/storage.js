@@ -81,7 +81,7 @@ function renderHistory() {
         div2.className = 'recentImg';
 
         img.src = 'assets/upload/' + historyData[row].gambar;
-        a.href = 'blog.php?id_blog=' + historyData[row].id_blog;
+        a.href = 'blog.html?id_blog=' + historyData[row].id_blog;
         a.setAttribute('onclick','saveRecent('+historyData[row].id_blog+',"'+ historyData[row].judul+'","'+historyData[row].gambar+'");');
         a.innerHTML = historyData[row].judul;
 

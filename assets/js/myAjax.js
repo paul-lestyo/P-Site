@@ -31,7 +31,7 @@ function myAjax(page) {
   		h2.innerText = data[row].judul;
   		img.src = 'assets/upload/' + data[row].gambar;
   		p.innerHTML = data[row].text.substr(0, 150)+'...';
-  		a.href = 'blog-' + data[row].id_blog + '.php';
+  		a.href = 'blog-' + data[row].id_blog + '.html';
       a.setAttribute('onclick','saveRecent('+data[row].id_blog+',"'+ data[row].judul+'","'+data[row].gambar+'");');
   		a.innerHTML = 'Read More >>';
 
